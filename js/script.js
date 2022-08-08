@@ -10,12 +10,12 @@ const grid = document.getElementById("grid");
 function drawGrid(range) {
   grid.textContent = '';
   
-  for (let i=0;i<range*16;i++) {
+  for (let i=0;i<range*12;i++) {
     document.getElementById("grid").appendChild(document.createElement("data-row"));
   }
 
   for (let grid of dataGrid) {
-    for(let i=0;i<range*16;i++) {
+    for(let i=0;i<range*12;i++) {
       grid.appendChild(document.createElement("data-cell"));
     }  
   }
